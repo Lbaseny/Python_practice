@@ -2,7 +2,6 @@
 import threading
 from threading import Thread
 
-
 # 要求：
 # 1. 创建一个 threading.Lock() 对象。
 # 2. 使用 acquire() 获取锁。

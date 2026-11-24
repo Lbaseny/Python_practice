@@ -11,7 +11,7 @@ import asyncio
 #    - 返回字符串 "用户年龄：18"，其中年龄必须使用获取到的结果拼接，不能写死。
 # 最后使用 asyncio.run() 正确调用，并打印结果。
 
-async def get_age(name):
+async def get_age():
     age = input('请输入用户年龄：')
     return age
 
@@ -21,7 +21,7 @@ async def get_user():
 
 async def main():
     name = await get_user()
-    age = await get_age(name)
+    age = await get_age()
     return f'{name}年龄：{age}'
 
 if __name__ == '__main__':
